@@ -1,8 +1,10 @@
-var area = document.getElementsByClassName("conditions");
+$(".conditions").click(function(){
+  $("#1").toggle();
+  $("#2").toggle();
+  $("#3").toggle();
+});
 
-for(var i = 0; i < tada.length; i++){
-   area[i].addEventListener("click", function(){
-    this.nextElementSibling.classList.toggle("visible");
-    
-  });
-}
+$(".area").click(function(){
+  $("#4").toggle();
+  $("#5").toggle();
+})
