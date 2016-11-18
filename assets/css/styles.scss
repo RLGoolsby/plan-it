@@ -105,6 +105,21 @@ input{
   vertical-align: top;
 }
 
+button {
+  margin: auto;
+    // display: flex;
+    // justify-content: center;
+    background-color: darkgreen; /* Green */
+    width: 4em;
+    // height: 1em;
+    border: none;
+    color: white;
+    // padding: 15px 32px;
+    // text-align: center;
+    text-decoration: none;
+    // display: inline-block;
+    font-size: 16px;
+}
 
 
 
