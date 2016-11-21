@@ -91,6 +91,10 @@ button {
   text-decoration: none;
   font-size: 16px; }
 
+footer {
+  display: flex;
+  justify-content: center; }
+
 @media screen and (min-width: 320px) {
   html, body, main {
     flex-wrap: nowrap; } }
