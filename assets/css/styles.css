@@ -26,7 +26,12 @@ header {
 form {
   justify-content: center; }
 
-/** Plant Names **/
+p {
+  font-size: 34px;
+  margin: auto;
+  font-family: sans-serif; }
+
+/** Plant Names plantid.html**/
 .fieldsets-group {
   margin-top: 0.9em;
   display: flex;
@@ -93,10 +98,18 @@ button {
 
 footer {
   display: flex;
-  justify-content: center; }
+  width: 100%;
+  height: 6em; }
+
+.additional {
+  position: static;
+  margin: auto; }
 
 @media screen and (min-width: 320px) {
   html, body, main {
+    flex-wrap: nowrap; }
+
+  footer {
     flex-wrap: nowrap; } }
 /*# sourceMappingURL=styles.css.map */
 
