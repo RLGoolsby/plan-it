@@ -1,4 +1,6 @@
 html, body, main {
+  flex-wrap: wrap;
+  align-content: space-between;
   background-color: #C9B677;
   height: 100%;
   display: flex;
@@ -6,7 +8,9 @@ html, body, main {
   min-width: 320px; }
 
 header {
+  flex-basis: 100%;
   width: 100%;
+  height: 15%;
   border: 2px solid black;
   background-image: url("https://static.vecteezy.com/system/resources/previews/000/081/782/non_2x/free-plant-vectors.jpg"); }
 
@@ -20,22 +24,17 @@ header {
 
 .fa.fa-globe {
   padding-left: 12px;
-  padding-right: 12px; }
+  padding-right: 21px; }
 
 /** Main Content Area **/
 form {
   justify-content: center; }
 
 p {
+  flex-basis: 100%;
   font-size: 34px;
   margin: auto;
   font-family: sans-serif; }
-
-/** Plant Names plantid.html**/
-.fieldsets-group {
-  margin-top: 0.9em;
-  display: flex;
-  justify-content: center; }
 
 .area {
   display: flex; }
@@ -88,6 +87,8 @@ input {
 
 button {
   margin: auto;
+  display: flex;
+  justify-content: center;
   background-color: darkgreen;
   /* Green */
   width: 4em;
@@ -98,19 +99,33 @@ button {
 
 footer {
   display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+  margin-top: 10em;
+  padding-top: 5em;
   width: 100%;
   height: 6em; }
 
 .additional {
-  position: static;
+  position: fixed;
   margin: auto; }
+
+/** Plant Names plantid.html**/
+.fieldsets-group {
+  margin-top: 0.9em;
+  display: flex;
+  justify-content: center;
+  flex-basis: 50%; }
 
 @media screen and (min-width: 320px) {
   html, body, main {
     flex-wrap: nowrap; }
 
-  footer {
-    flex-wrap: nowrap; } }
+  header {
+    flex-basis: 40%; }
+
+  main {
+    flex-basis: 60%; } }
 /*# sourceMappingURL=styles.css.map */
 
 /*# sourceMappingURL=styles.css.map */
