@@ -2,16 +2,19 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,100,700' rel='stylesheet' type='text/css'>
     <title>Plan-it</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   </head>
 
   <body>
+
+
 
       <header>
         <h1 class = "title">Plan<span class="fa fa-globe fa-2x"></span>it</h1>
@@ -130,12 +133,11 @@
             <option value='WY'>Wyoming</option>
           </select>
         </div>
-      </div>
+
 
 </form>
-
-    <button type ="submit">Submit</button>
-
+<a href="#/plant-id">
+    <button type ="submit">Submit</button></a>
 
 </main>
 
@@ -152,7 +154,14 @@
 
 
 
+<!-- portal view -->
+    <div ng-app="landing-pg">
+      <ng-view></ng-view>
+    </div>
 
-    <script src = assets/js/scripts.js></script>
+              <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.js"></script>
+              <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular-route.js"></script>
+            <script src="assets/js/apps.js"></script>
+            <script src = "assets/js/scripts.js"></script>
   </body>
 </html>
