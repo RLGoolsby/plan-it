@@ -1,4 +1,4 @@
-var landing = angular.module("landing-pg", ["ngRoute"]);
+var landing = angular.module("info", ["ngRoute"]);
  console.log("working");
 landing.config(function($routeProvider){
   console.log("and now");

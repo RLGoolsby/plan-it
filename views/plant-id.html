@@ -2,17 +2,25 @@
 <div id = "plant-id">
 
   <a href="#/home"><span class="fa fa-home" aria-hidden="true"></span></a>
-
-    <div class='fieldsets-group'>
-      <div class='fieldset fieldset-1of2'>
+<!-- Plants info container -->
+    <div class='fieldsset-group'>
+<!-- Plant info container -->
+      <div class='fieldset-item'>
         <label class = "PBN">Plant Botanical Name</label>
-        <input placeholder='Rododendron' type='text'>
+        <div ng-repeat="plant in info.plants">
+        <h1>{{info.plant.botanicalName}}</h1>
+        <h1>{{info.plant.commonName}}</h2>
+        <p>{{info.plant.description}}</p>
+        <!-- <input placeholder='Rododendron' type='text'> -->
+        <button ng-show="info.plant.wishList">Add to list</button>
+      </div>
       </div>
 
-      <div class='fieldset fieldset-1of2'>
+      <!-- <div class='fieldset fieldset-1of2'>
         <label class = "PCN">Plant Common Name</label>
+
         <input placeholder='Azalea' type='text'>
-    </div>
+    </div> -->
   </div>
 
 </div>
