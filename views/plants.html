@@ -1,20 +1,21 @@
 
 <div id = "plants">
 
-  <a href="#/home"><span class="fa fa-home" aria-hidden="true"></span></a>
+  <a href="#/home"><span class="fa fa-home fa-3x" aria-hidden="true"></span></a>
 <!-- Plants info container -->
-    <!-- <div class='fieldsset-group'> -->
+    <div class='fieldsset-group'>
 <!-- Plant info container -->
-      <!-- <div class='fieldset-item'> -->
-        <label class = "PBN">Plant Name</label>
+      <div class="fieldset-item">
+        <label class = "PN">Plant Name</label>
         <div ng-repeat="plant in info.plants">
         <h1>{{info.plant.botanicalName}}</h1>
-        <h1>{{info.plant.commonName}}</h2>
+        <h2>{{info.plant.commonName}}</h2>
         <p>{{info.plant.description}}</p>
-        <!-- <input placeholder='Rododendron' type='text'> -->
+        </div>
+        <input placeholder='Rododendron' type='text'>
         <button ng-show="info.plant.wishList">Add to list</button>
-      <!-- </div> -->
-      <!-- </div> -->
+
+      </div>
 
       <!-- <div class='fieldset fieldset-1of2'>
         <label class = "PCN">Plant Common Name</label>
