@@ -3,8 +3,8 @@ var landing = angular.module("info", ["ngRoute"]);
 landing.config(function($routeProvider){
   console.log("and now");
   $routeProvider
-    .when("/plant-id",{
-      templateUrl: "views/plant-id.html"
+    .when("/plants",{
+      templateUrl: "views/plants.html"
 
     })
     // .when("/projects",{
