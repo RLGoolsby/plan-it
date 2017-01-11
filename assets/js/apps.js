@@ -7,10 +7,10 @@ landing.config(function($routeProvider){
       templateUrl: "views/plants.html"
 
     })
-    // .when("/projects",{
-    //   templateUrl: "views/projects.html"
-    //
-    // })
+    .when("/resources",{
+      templateUrl: "views/resources.html"
+
+    })
     // .when("/resume",{
     //   templateUrl: "views/resume.html"
     // })

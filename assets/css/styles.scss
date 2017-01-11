@@ -41,18 +41,12 @@ form{
 }
 
 p{
-  flex-basis: 100%;
+  // flex-basis: 100%;
   font-size: 34px;
   margin: auto;
   font-family: sans-serif;
 }
 
-
-
-
-.area{
-  display: flex;
-}
 
 
 label{
@@ -61,13 +55,6 @@ label{
   font-size: 1.5em;
 }
 
-// .PBN{
-//   font-size: 2em;
-// }
-//
-// .PCN{
-//   font-size: 2em;
-// }
 
 input{
   padding-left: 1.5em;
@@ -92,6 +79,7 @@ input{
 }
 
 .area{
+  display: flex;
   margin: 0 0 0.3em 0.5em;
   padding-top: 1em;
   color: darkgreen;
@@ -102,29 +90,24 @@ input{
   cursor: pointer;
 }
 
+
 /** Criteria **/
 .fieldset{
   display: inline-flex;
-  // margin-top: 1em;
   margin-left: 2em;
   justify-content: space-around;
   vertical-align: top;
 }
 
-button {
+.plants{
     margin: auto;
-    // margin-top: 1em;
     display: flex;
     justify-content: center;
     background-color: darkgreen; /* Green */
     width: 4em;
-    // height: 1em;
     border: none;
     color: white;
-    // padding: 15px 32px;
-    // text-align: center;
     text-decoration: none;
-    // display: inline-block;
     font-size: 16px;
 }
 
@@ -136,23 +119,7 @@ button {
   background-color: lightcyan;
 }
 
-/** home icon **/
-.fa.fa-home{
-  color: black;
-  margin-top: 0.5em;
-  margin-left: 0.5em;
-}
-
-/** Plant Name **/
-.PN{
-font-size: 2.5em;
-}
-
-
-/** plants.html**/
-
-
-.fieldset-item{
+.fieldset-group{
   margin-top: 4em;
   margin-left: auto;
   display: flex;
@@ -160,22 +127,62 @@ font-size: 2.5em;
   flex-basis: 50%;
 }
 
-footer{
+/** home icon **/
+.fa.fa-home{
+  color: black;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+}
+
+/** Plant Names **/
+.PN{
+font-size: 2.5em;
+}
+
+
+
+
+/** Resources.html **/
+#resources{
+position: absolute;
+width: 102%;
+height: 144%;
+background-color: lightcyan;
+}
+
+
+.options{
   display: flex;
-  flex-basis: 100%;
-  justify-content: center;
-  // margin-top: 10em;
-  padding-top: 1em;
-  width: 100%;
-  height: 6em;
-
+  margin-top: 1em;
+  margin-left: 2em;
+  border: none;
+  color: black;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 14px;
 }
 
-.additional{
-  position: fixed;
+// .fa.fa-search{
+//   margin-top: 1em;
+//   margin-left: 0.5em;
+// }
+
+.additional-info{
+  outline: 1px solid black;
+  margin-top: auto;
   margin: auto;
-
 }
+
+.local{
+  font-size: 4em;
+  color: darkgreen;
+}
+
+.websites{
+  font-size: 5em;
+  color: lightgreen;
+}
+
 
 
 

@@ -5,7 +5,7 @@ app.controller('InfoController', function(){
   this.id=plants;
 });
 
-var plants = {
+var plants = [{
   botanicalName: "Iris siberia",
   commonName: 'Siberian Iris',
   description: "...",
@@ -17,4 +17,5 @@ var plants = {
   description: "...",
   wishList: true;
 }
+]
 })();

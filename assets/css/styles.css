@@ -32,13 +32,9 @@ form {
   justify-content: center; }
 
 p {
-  flex-basis: 100%;
   font-size: 34px;
   margin: auto;
   font-family: sans-serif; }
-
-.area {
-  display: flex; }
 
 label {
   color: black;
@@ -64,6 +60,7 @@ input {
   cursor: pointer; }
 
 .area {
+  display: flex;
   margin: 0 0 0.3em 0.5em;
   padding-top: 1em;
   color: darkgreen;
@@ -80,7 +77,7 @@ input {
   justify-content: space-around;
   vertical-align: top; }
 
-button {
+.plants {
   margin: auto;
   display: flex;
   justify-content: center;
@@ -99,35 +96,52 @@ button {
   height: 144%;
   background-color: lightcyan; }
 
-/** home icon **/
-.fa.fa-home {
-  color: black;
-  margin-top: 0.5em;
-  margin-left: 0.5em; }
-
-/** Plant Name **/
-.PN {
-  font-size: 2.5em; }
-
-/** plants.html**/
-.fieldset-item {
+.fieldset-group {
   margin-top: 4em;
   margin-left: auto;
   display: flex;
   justify-content: center;
   flex-basis: 50%; }
 
-footer {
-  display: flex;
-  flex-basis: 100%;
-  justify-content: center;
-  padding-top: 1em;
-  width: 100%;
-  height: 6em; }
+/** home icon **/
+.fa.fa-home {
+  color: black;
+  margin-top: 0.5em;
+  margin-left: 0.5em; }
 
-.additional {
-  position: fixed;
+/** Plant Names **/
+.PN {
+  font-size: 2.5em; }
+
+/** Resources.html **/
+#resources {
+  position: absolute;
+  width: 102%;
+  height: 144%;
+  background-color: lightcyan; }
+
+.options {
+  display: flex;
+  margin-top: 1em;
+  margin-left: 2em;
+  border: none;
+  color: black;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 14px; }
+
+.additional-info {
+  outline: 1px solid black;
+  margin-top: auto;
   margin: auto; }
+
+.local {
+  font-size: 4em;
+  color: darkgreen; }
+
+.websites {
+  font-size: 5em;
+  color: lightgreen; }
 
 @media screen and (min-width: 320px) {
   html, body, main {
