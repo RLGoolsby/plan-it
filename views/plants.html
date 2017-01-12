@@ -1,5 +1,5 @@
 
-<div id = "plants">
+<div id = "plants" ng-controller = "plantsController">
 
   <a href="#/home"><span class="fa fa-home fa-3x" aria-hidden="true"></span></a>
 <!-- additional resources -->
@@ -8,14 +8,14 @@
 
 
 
-    <div ng-controller="InfoController">
+    <div>
       <!-- Plant info container -->
       <ul class="fieldset-group">
         <label class = "PN">Plant Name</label>
-        <li class="fieldset-group-item" ng-repeat="plant in info.plants | limitTo:3">
-        <h1>Botanical:{{info.plant.botanicalName}}</h1>
-        <h1 class="common">Common:{{info.plant.commonName}}</h1>
-        <p class="description">Description:{{info.plant.description}}</p>
+        <li class="fieldset-group-item" ng-repeat="name in plants.names| limitTo:3">
+        <h1>Botanical:{{name.plant.botanicalName}}</h1>
+        <h1 class="common">Common:{{name.plant.commonName}}</h1>
+        <!-- <p class="description">Description:{{info.plant.description}}</p> -->
         <button ng-show="info.plant.wishList">Add to list</button>
         </ul>
         <!-- <input placeholder='Rododendron' type='text'> -->
@@ -29,8 +29,8 @@
         <section ng-controller="PanelController as panel">
           <!-- nav-tabs container -->
             <ul class="nav-tabs">
-            <li ng-class="{ active:tab === 1 }"><a href ng-click="tab = 1"></a>Description</li>
-            <li ng-class="{ active:tab === 2 }">><a href ng-click="tab = 2"></a>Specification</li>
+            <li ng-class="{ panel.isSelected(1) }"><a href ng-click="panel.selectTab(1)"></a>Description</li>
+            <li ng-class="{ panel.isSelected(2) }"><a href ng-click="panel.selectTab(2)"></a>Specification</li>
             </ul>
 
             <div class="panel" ng-show="tab === 1">

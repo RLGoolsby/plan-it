@@ -30,7 +30,7 @@
 
       <header>
         <h1 class = "title">Plan<span class="fa fa-globe fa-2x"></span>it</h1>
-        
+
       </header>
 
 
@@ -38,14 +38,14 @@
 
 
 
-        <!-- <p class = "intro">Can I plant this here?<i class="fa fa-sun-o" aria-hidden="true"></i><i class="fa fa-cloud" aria-hidden="true"></i></p> -->
-          <form>
+
+          <form class= "selectCondtions" ng-controller="selectController as selectCtrl" ng-submit="selectCtrl.addSelect(conditions)" >
 
             <h1 class = "conditions">Area Conditions<i class="fa fa-level-down" aria-hidden="true"></i></h1>
 
             <div class='fieldset' id ="1">
               <label>Light Exposure</label>
-              <select class = "select-exposure">
+              <select ng-model = "selectCtrl.select.exposure">
                 <option value = "Sun">Full Sun</option>
                 <option value = "Pt/Sun">Part Sun</option>
                 <option value = "Pt/Shade">Part Shade</option>
@@ -55,7 +55,7 @@
 
               <div class='fieldset' id = "2">
                 <label>Max Height</label>
-                <select class = "height">
+                <select class = "selectCtrl.select.height">
                   <option value = "ft1">3 feet</option>
                   <option value = "ft2">6 feet</option>
                   <option value = "ft3">9 feet</option>
@@ -69,7 +69,7 @@
 
               <div class='fieldset' id = "3">
                 <label>Max Width</label>
-                <select class = "width">
+                <select class = "selectCtrl.select.width">
                   <option value = "wt1">3 feet</option>
                   <option value = "wt2">6 feet</option>
                   <option value = "wt3">9 feet</option>
@@ -84,7 +84,7 @@
     <h1 class = "area">Climate Zone<i class="fa fa-level-down" aria-hidden="true"></i></h1>
       <div class='fieldset' id = "4">
           <label>Planting Zone</label>
-          <select class = "zone">
+          <select class = "selectCtrl.select.zone">
             <option value = "mountain">mountains</option>
             <option value = "piedmont">piedmont</option>
             <option value = "coastal">coastal</option>
@@ -94,7 +94,7 @@
 
       <div class = "fieldset" id = "5">
           <label>State</label>
-          <select class='select-state'>
+          <select class='selectCtrl.select.state'>
             <option value='AL'>Alabama</option>
             <option value='AK'>Alaska</option>
             <option value='AZ'>Arizona</option>
@@ -165,10 +165,14 @@
 
 
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.js"></script>
- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular-route.js"></script>
-              <!-- <script type= "text/javascript" src="angular.min.js"></script> -->
-            <script src = "assets/js/apps.js"></script>
+            <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-route.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-resource.js"></script>
+            <script src="assets/js/selectController.js"></script>
+            <script src="assets/js/plantsController.js"></script>
+            <script src="assets/js/panelController.js"></script>
+            <script src="assets/js/app.js"></script>
             <script src = "assets/js/scripts.js"></script>
   </body>
 </html>
