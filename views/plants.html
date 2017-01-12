@@ -7,9 +7,9 @@
     <button class="options" ><i class="fa fa-search fa-2x" aria-hidden="true"></i></button></a>
 
 
-    <div ng-controller="InfoController">
 
-<!-- Plant info container -->
+    <div ng-controller="InfoController">
+      <!-- Plant info container -->
       <ul class="fieldset-group">
         <label class = "PN">Plant Name</label>
         <li class="fieldset-group-item" ng-repeat="plant in info.plants | limitTo:3">
@@ -20,24 +20,29 @@
         </ul>
         <!-- <input placeholder='Rododendron' type='text'> -->
 
+    </div>
 
-        <!-- nav buttons to show info about plants -->
-        <section><!-- ng-controller="PanelController as panel" -->
-          <ul class="nav-buttons">
-            <!-- ng-class="{ active:tab === 1 }" --><li><a href ng-click="tab = 1"></a>Description</li>
-            <!-- <li ng-class="{ active:tab === 2 }"> --><li><a href ng-click="tab = 2"></a>Specification</li>
-          </ul>
 
-          <!-- <div class="panel" ng-show="tab === 1">
-            <h4>Description</h4>
-            <p>{{plant.description}}</p>
-          </div> -->
+
+
+        <!-- nav-tabs to show info about plants; Description and Specification -->
+        <section ng-controller="PanelController as panel">
+          <!-- nav-tabs container -->
+            <ul class="nav-tabs">
+            <li ng-class="{ active:tab === 1 }"><a href ng-click="tab = 1"></a>Description</li>
+            <li ng-class="{ active:tab === 2 }">><a href ng-click="tab = 2"></a>Specification</li>
+            </ul>
+
+            <div class="panel" ng-show="tab === 1">
+              <h4>Description</h4>
+              <p>{{plant.description}}</p>
+            </div>
 
         </section>
 
 
 
-      </div>
+
 
 
 
