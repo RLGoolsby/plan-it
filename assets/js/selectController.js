@@ -1,4 +1,4 @@
-(function(){
+
 var app = angular.module('info', [ ]);
 
 
@@ -10,7 +10,5 @@ app.controller('selectConditions', function(){
      conditions.selects.push(this.select);
      this.select = {};// clears out selections //
    };
+
 });
-
-
- })();

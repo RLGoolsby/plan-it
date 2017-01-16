@@ -13,7 +13,7 @@ html, body, main{
 
 header{
 flex-basis: 100%;
-width: 100%;
+width: 102%;
 // background-color: #71E3F0;
 border: 2px solid black;
 background-image: url("https://static.vecteezy.com/system/resources/previews/000/081/782/non_2x/free-plant-vectors.jpg");
@@ -58,15 +58,15 @@ label{
 
 input{
   padding-left: 1.5em;
-  width: 7em;
-  height: 1em;
+  // width: 7em;
+  // height: 1em;
   font-size: 1.5em;
-  opacity: 0.8;
+  // opacity: 0.8;
 }
 
 
 /** JS accordion set up **/
-.conditions{
+#conditions{
   margin: 0 0 0.3em 0.5em;
 	padding-top: 1em;
   color: darkgreen;
@@ -78,7 +78,7 @@ input{
 
 }
 
-.area{
+#area{
   display: flex;
   margin: 0 0 0.3em 0.5em;
   padding-top: 1em;
@@ -116,7 +116,7 @@ input{
   position: absolute;
   width: 102%;
   height: 144%;
-  background-color: lightcyan;
+  background-color: #C9B677;
 }
 
 .fieldset-group{
@@ -147,7 +147,7 @@ font-size: 2.5em;
 position: absolute;
 width: 102%;
 height: 144%;
-background-color: lightcyan;
+background-color: #C9B677;
 }
 
 

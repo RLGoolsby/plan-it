@@ -1,5 +1,5 @@
 
-<div id = "plants" ng-controller = "plantsController">
+<div id = "plants">
 
   <a href="#/home"><span class="fa fa-home fa-3x" aria-hidden="true"></span></a>
 <!-- additional resources -->
@@ -8,7 +8,7 @@
 
 
 
-    <div>
+    <div ng-controller = "plantsController">
       <!-- Plant info container -->
       <ul class="fieldset-group">
         <label class = "PN">Plant Name</label>
@@ -26,7 +26,7 @@
 
 
         <!-- nav-tabs to show info about plants; Description and Specification -->
-        <section ng-controller="PanelController as panel">
+        <section ng-controller="panelController as panel">
           <!-- nav-tabs container -->
             <ul class="nav-tabs">
             <li ng-class="{ panel.isSelected(1) }"><a href ng-click="panel.selectTab(1)"></a>Description</li>
