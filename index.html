@@ -1,7 +1,7 @@
 
 
 <!DOCTYPE html>
-<html>
+<html ng-app="plantInfo">
 
   <head>
     <meta charset="utf-8">
@@ -19,96 +19,24 @@
 
   <body>
 
-
-
-
-
+    <ng-view></ng-view>
 
       <header>
         <h1 class = "title">Plan<span class="fa fa-globe fa-2x"></span>it</h1>
-
       </header>
 
 
-      <!-- portal view -->
-        <div ng-app="plantInfo">
-          <ng-view></ng-view>
-
-        </div>
-
-    <!-- <main> -->
 
 
+    <ul class= "homepage-tabs">
+    <li><a href="#/plants">
+        <button class="plants">Plants</button></a></li>
+    <li><a href="#/conditions">
+        <button class="specifics">Conditions</button></a></li>
+    <li><a href="#/local-nurseries">
+        <button class="local-nurseries">Local Nurseries</button></a></li>
+    </ul>
 
-        <div id= "selectionWrapper">
-
-            <h1 id = "conditions" >Area Conditions<i class="fa fa-level-down" aria-hidden="true"></i></h1>
-
-            <form class= "selectCondtions" ng-controller="selectController as selectCtrl" ng-submit="selectCtrl.addSelect(conditions)" >
-
-            <div class='fieldset' id ="1">
-              <label>Light Exposure</label>
-              <select ng-model = "selectCtrl.select.exposure">
-                <option value = "Sun">Full Sun</option>
-                <option value = "Pt/Sun">Part Sun</option>
-                <option value = "Pt/Shade">Part Shade</option>
-                <option value = "Shade">Full Shade</option>
-              </select>
-            </div>
-
-              <div class='fieldset' id = "2">
-                <label>Max Height</label>
-                <select class = "selectCtrl.select.height">
-                  <option value = "ft1">3 feet</option>
-                  <option value = "ft2">6 feet</option>
-                  <option value = "ft3">9 feet</option>
-                  <option value = "ft4">12 feet</option>
-                  <option value = "ft5">15 feet</option>
-                  <option value = "ft6">20 feet</option>
-                  <option value = "ft7">25 feet</option>
-                  <option value = "ft8">Unlimited Height</option>
-                </select>
-              </div>
-
-              <div class='fieldset' id = "3">
-                <label>Max Width</label>
-                <select class = "selectCtrl.select.width">
-                  <option value = "wt1">3 feet</option>
-                  <option value = "wt2">6 feet</option>
-                  <option value = "wt3">9 feet</option>
-                  <option value = "wt4">12 feet</option>
-                  <option value = "wt5">15 feet</option>
-                  <option value = "wt6">20 feet</option>
-                  <option value = "wt7">25 feet</option>
-                  <option value = "wt8">Unlimited Width</option>
-                </select>
-              </div>
-              <!-- <input type="submit" value="Submit"> -->
-            <!-- </form>selectConditions -->
-
-            <h1 id = "area">Climate Zone<i class="fa fa-level-down" aria-hidden="true"></i></h1>
-              <form class= "selectArea" ng-controller="selectController as selectCtrl" ng-submit="selectCtrl.addSelect(area)" >
-
-              <div class='fieldset' id = "4">
-                  <label>Planting Zone</label>
-                  <select class = "selectCtrl.select.zone">
-                    <option value = "mountain">mountains</option>
-                    <option value = "piedmont">piedmont</option>
-                    <option value = "coastal">coastal</option>
-                    <option value = "wetlands">wetlands</option>
-                  </select>
-              </div>
-
-                <input type="submit" value="Submit">
-              </form><!-- selectArea -->
-        </div> <!-- selectionWrapper -->
-
-<a href="#/plants">
-    <button class="plants">Plants</button></a>
-
-
-<!-- </main> -->
-<!-- Resources.html view -->
 
 
 

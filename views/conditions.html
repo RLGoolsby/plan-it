@@ -1,0 +1,66 @@
+<div id= "conditions">
+
+    <a href="#/home"><span class="fa fa-home fa-3x" aria-hidden="true"></span></a>
+
+    <div id= "selectionWrapper">
+
+
+        <h1 id = "area-conditions" >Area Conditions<i class="fa fa-level-down" aria-hidden="true"></i></h1>
+
+        <form class= "selectCondtions" ng-controller="selectController as selectCtrl" ng-submit="selectCtrl.addSelect(conditions)" >
+
+        <div class='fieldset' id ="1">
+          <label>Light Exposure</label>
+          <select ng-model = "selectCtrl.select.exposure">
+            <option value = "Sun">Full Sun</option>
+            <option value = "Pt/Sun">Part Sun</option>
+            <option value = "Pt/Shade">Part Shade</option>
+            <option value = "Shade">Full Shade</option>
+          </select>
+        </div>
+
+          <div class='fieldset' id = "2">
+            <label>Max Height</label>
+            <select class = "selectCtrl.select.height">
+              <option value = "ft1">3 feet</option>
+              <option value = "ft2">6 feet</option>
+              <option value = "ft3">9 feet</option>
+              <option value = "ft4">12 feet</option>
+              <option value = "ft5">15 feet</option>
+              <option value = "ft6">20 feet</option>
+              <option value = "ft7">25 feet</option>
+              <option value = "ft8">Unlimited Height</option>
+            </select>
+          </div>
+
+          <div class='fieldset' id = "3">
+            <label>Max Width</label>
+            <select class = "selectCtrl.select.width">
+              <option value = "wt1">3 feet</option>
+              <option value = "wt2">6 feet</option>
+              <option value = "wt3">9 feet</option>
+              <option value = "wt4">12 feet</option>
+              <option value = "wt5">15 feet</option>
+              <option value = "wt6">20 feet</option>
+              <option value = "wt7">25 feet</option>
+              <option value = "wt8">Unlimited Width</option>
+            </select>
+          </div>
+          <form>
+
+        <h1 id = "climate-zone">Climate Zone<i class="fa fa-level-down" aria-hidden="true"></i></h1>
+          <form class= "selectArea" ng-controller="selectController as selectCtrl" ng-submit="selectCtrl.addSelect(area)" >
+
+          <div class='fieldset' id = "4">
+              <label>Planting Zone</label>
+              <select class = "selectCtrl.select.zone">
+                <option value = "mountain">mountains</option>
+                <option value = "piedmont">piedmont</option>
+                <option value = "coastal">coastal</option>
+                <option value = "wetlands">wetlands</option>
+              </select>
+          </div>
+
+            <input type="submit" value="Submit">
+          </form>
+    </div> <!-- selectionWrapper -->

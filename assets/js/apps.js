@@ -7,12 +7,12 @@ app.config(function($routeProvider){
       templateUrl: "views/plants.html"
 
     })
-    .when("/resources",{
-      templateUrl: "views/resources.html"
-
+    .when("/conditions",{
+      templateUrl: "views/conditions.html"
     })
-    .when("/resume",{
-      templateUrl: "views/resume.html"
+    .when("/local-nurseries",{
+      templateUrl: "views/local-nurseries.html"
+
     })
     .otherwise({
       redirectTo: "/home"
