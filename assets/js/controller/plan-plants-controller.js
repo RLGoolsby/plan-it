@@ -1,14 +1,14 @@
 
-var app = angular.module('info', [ ]);
+var app = angular.module('plantInfo', [ ]);
 
 // controller for the plant names on plants.html//
-app.controller('plantsController', ['$http', '$scope', '$location',
-    function($http, $scope, $location){
+app.controller('planPlantsController', function($scope){
+  // $scope.botanicalName =
   this.name=plants;
   console.log ('plants working');
 
-    }
-]);
+});
+
 
 var plants = [{
   botanicalName: "Iris siberia",

@@ -1,6 +1,6 @@
-var landing = angular.module("info", ["ngRoute"]);
+var app = angular.module("plantInfo", ["ngRoute"]);
  console.log("working");
-landing.config(function($routeProvider){
+app.config(function($routeProvider){
   console.log("and now");
   $routeProvider
     .when("/plants",{
@@ -11,9 +11,9 @@ landing.config(function($routeProvider){
       templateUrl: "views/resources.html"
 
     })
-    // .when("/resume",{
-    //   templateUrl: "views/resume.html"
-    // })
+    .when("/resume",{
+      templateUrl: "views/resume.html"
+    })
     .otherwise({
       redirectTo: "/home"
 

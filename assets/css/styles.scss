@@ -57,12 +57,13 @@ label{
 
 
 input{
-  padding-left: 1.5em;
-  // width: 7em;
-  // height: 1em;
+  margin: auto;
+  // padding-left: 1.5em;
+  padding-top: 2em;
   font-size: 1.5em;
-  // opacity: 0.8;
+
 }
+
 
 
 /** JS accordion set up **/
@@ -91,9 +92,11 @@ input{
 }
 
 
+
 /** Criteria **/
 .fieldset{
-  display: inline-flex;
+  display: none;
+  // display: inline-flex;
   margin-left: 2em;
   justify-content: space-around;
   vertical-align: top;
@@ -136,10 +139,19 @@ input{
 
 /** Plant Names **/
 .PN{
-font-size: 2.5em;
+font-size: 3em;
 }
 
-
+.nav-tabs{
+  text-align: center;
+  color: darkcyan;
+}
+li{
+  padding-right: 23px;
+  padding-top: 1em;
+  display:inline-flex;
+  font-size: 1.5em;
+}
 
 
 /** Resources.html **/
@@ -151,7 +163,7 @@ background-color: #C9B677;
 }
 
 
-.options{
+.nurseries{
   display: flex;
   margin-top: 1em;
   margin-left: 2em;
@@ -160,28 +172,29 @@ background-color: #C9B677;
   text-decoration: none;
   border-radius: 3px;
   font-size: 14px;
+  // background-color: lightcyan;
 }
 
-// .fa.fa-search{
-//   margin-top: 1em;
-//   margin-left: 0.5em;
-// }
+.options{
+  background-color: lightcyan;
+}
+
 
 .additional-info{
   outline: 1px solid black;
   margin-top: auto;
   margin: auto;
+  // background-color: lightcyan;
 }
 
 .local{
+  background-color: lightcyan;
+  padding: 1em;
   font-size: 4em;
   color: darkgreen;
 }
 
-.websites{
-  font-size: 5em;
-  color: lightgreen;
-}
+
 
 
 

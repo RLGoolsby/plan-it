@@ -11,7 +11,7 @@
     <div ng-controller = "plantsController">
       <!-- Plant info container -->
       <ul class="fieldset-group">
-        <label class = "PN">Plant Name</label>
+        <label class = "PN">Plant Name:</label>
         <li class="fieldset-group-item" ng-repeat="name in plants.names| limitTo:3">
         <h1>Botanical:{{name.plant.botanicalName}}</h1>
         <h1 class="common">Common:{{name.plant.commonName}}</h1>
@@ -33,10 +33,10 @@
             <li ng-class="{ panel.isSelected(2) }"><a href ng-click="panel.selectTab(2)"></a>Specification</li>
             </ul>
 
-            <div class="panel" ng-show="tab === 1">
+            <!-- <div class="panel" ng-show="tab === 1">
               <h4>Description</h4>
               <p>{{plant.description}}</p>
-            </div>
+            </div> -->
 
         </section>
 
@@ -51,6 +51,3 @@
 
         <input placeholder='Azalea' type='text'> -->
     </div>
-  </div>
-
-</div>
