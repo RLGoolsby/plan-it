@@ -43,7 +43,7 @@ background-image: url("https://static.vecteezy.com/system/resources/previews/000
 
 /** ul class for routing buttons on index.html **/
 .homepage-tabs{
-  margin-left: auto;
+  float: right;
   display: inline-flex;
 }
 
@@ -105,8 +105,13 @@ form{
 label{
   color: black;
   padding-right: 0.5em;
-  font-size: 1.5em;
+  font-size: 3em;
 }
+
+// option{
+//   width: 3em;
+//   height: 2em;
+// }
 
 input{/** may use later **/
   margin: auto;
@@ -115,8 +120,13 @@ input{/** may use later **/
 
 }
 
+#selectionWrapper{
+  height: 100%;
+}
+
 .fieldset{
-  display: none;
+  // display: none;
+  display: inline-flex;
   margin-left: 2em;
   justify-content: space-around;
   vertical-align: top;
@@ -128,7 +138,7 @@ input{/** may use later **/
 	padding-top: 1em;
   color: darkgreen;
 	border-bottom: 1px solid #343536;
-	font-size: 2em;
+	font-size: 3.5em;
 	font-weight: 300;
   font-style: normal;
   cursor: pointer;
@@ -141,7 +151,7 @@ input{/** may use later **/
   padding-top: 1em;
   color: darkgreen;
   border-bottom: 1px solid #343536;
-  font-size: 2em;
+  font-size: 3.5em;
   font-weight: 300;
   font-style: normal;
   cursor: pointer;

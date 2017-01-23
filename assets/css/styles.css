@@ -32,7 +32,7 @@ header {
 /** HOME PAGE ROUTING BUTTONS**/
 /** ul class for routing buttons on index.html **/
 .homepage-tabs {
-  margin-left: auto;
+  float: right;
   display: inline-flex; }
 
 /**  3 routing buttons on index.html **/
@@ -90,7 +90,7 @@ form {
 label {
   color: black;
   padding-right: 0.5em;
-  font-size: 1.5em; }
+  font-size: 3em; }
 
 input {
   /** may use later **/
@@ -98,8 +98,11 @@ input {
   padding-top: 2em;
   font-size: 1.5em; }
 
+#selectionWrapper {
+  height: 100%; }
+
 .fieldset {
-  display: none;
+  display: inline-flex;
   margin-left: 2em;
   justify-content: space-around;
   vertical-align: top; }
@@ -110,7 +113,7 @@ input {
   padding-top: 1em;
   color: darkgreen;
   border-bottom: 1px solid #343536;
-  font-size: 2em;
+  font-size: 3.5em;
   font-weight: 300;
   font-style: normal;
   cursor: pointer; }
@@ -121,7 +124,7 @@ input {
   padding-top: 1em;
   color: darkgreen;
   border-bottom: 1px solid #343536;
-  font-size: 2em;
+  font-size: 3.5em;
   font-weight: 300;
   font-style: normal;
   cursor: pointer; }
