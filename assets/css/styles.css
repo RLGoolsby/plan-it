@@ -1,12 +1,13 @@
 html, body, main {
   top: 0;
   background-color: #C9B677;
+  width: 100%;
   min-width: 320px; }
 
 /** HEADER ON HOME PAGE/INDEX.HTML **/
 header {
   justify-content: center;
-  width: 112%;
+  width: 100%;
   border: 2px solid black;
   background-image: url("https://static.vecteezy.com/system/resources/previews/000/081/782/non_2x/free-plant-vectors.jpg"); }
 
@@ -25,6 +26,7 @@ header {
 /** end of header **/
 /**  bootstrap container div **/
 .container {
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -180,7 +182,7 @@ li {
 
 .nurseries {
   display: flex;
-  margin-top: 9em;
+  margin-top: 10em;
   border: none;
   color: black;
   text-decoration: none;
