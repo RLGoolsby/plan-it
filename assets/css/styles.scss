@@ -1,22 +1,17 @@
 
 html, body, main{
   top: 0;
-  flex-wrap:  wrap;
-  align-content: space-between;
   background-color: #C9B677;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+  // height: 100%;
+
   min-width: 320px;
 }
 
 
 /** HEADER ON HOME PAGE/INDEX.HTML **/
 header{
-flex-basis: 100%;
-width: 102%;
-// background-color: #71E3F0;
+justify-content: center;
+width: 112%;
 border: 2px solid black;
 background-image: url("https://static.vecteezy.com/system/resources/previews/000/081/782/non_2x/free-plant-vectors.jpg");
 
@@ -27,8 +22,6 @@ background-image: url("https://static.vecteezy.com/system/resources/previews/000
   font-size: 12em;
   color: darkgreen;
   margin-top: 0.2em;
-  padding: 4px auto;
-  justify-content: center;
 }
 .fa.fa-globe{/** globe icon in header **/
   padding-left: 12px;
@@ -36,23 +29,26 @@ background-image: url("https://static.vecteezy.com/system/resources/previews/000
 }
 /** end of header **/
 
-
+/**  bootstrap container div **/
+.container{
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
 /** HOME PAGE ROUTING BUTTONS FOR 3 HTML VIEWS**/
 /** ul class for routing buttons on index.html **/
-// .nav.nav-pills{
-//   float: right;
-  // display: inline-flex;
-// }
-/** bootstrap nav-pills **//
-// ul {
-//     margin-left: auto;
-//     padding-left: 0;
-//     margin-bottom: 0;
-//     list-style: none;
-// }
-/**  3 routing buttons on index.html **/
+/** bootstrap nav-pills **/
+ul {
+    margin-left: auto;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+/**  3 angular routing buttons on index.html **/
 .plants{/** 1 **/
     background-color: darkgreen; /* Green */
     border-radius: 5px;
@@ -98,7 +94,6 @@ background-image: url("https://static.vecteezy.com/system/resources/previews/000
 /** Conditions.html view **/
 #conditions{
   position: absolute;
-  // margin-top: 3em;
   width: 102%;
   height: 144%;
   background-color: #C9B677;
@@ -140,7 +135,6 @@ input{/** may use later **/
 
 /** ACCORDION SET UP **/
 #area-conditions{
-  // margin: 0 0 0.3em 0.5em;
 	padding-top: 4em;
   color: darkgreen;
 	border-bottom: 1px solid #343536;
@@ -202,9 +196,8 @@ font-size: 3em;
   color: darkcyan;
 }
 li{
-  padding-right: 23px;
+  padding-right: 10px;
   padding-top: 1em;
-  display:inline-flex;
   font-size: 1.5em;
 }
 /** end of plants page **/
@@ -225,8 +218,7 @@ background-color: #C9B677;
 
 .nurseries{
   display: flex;
-  margin-top: 1em;
-  margin-left: 2em;
+  margin-top: 9em;
   border: none;
   color: black;
   text-decoration: none;
@@ -254,27 +246,23 @@ background-color: #C9B677;
 
 .local{
   background-color: lightcyan;
-  padding: 1em;
+  padding: 2em;
   font-size: 4em;
   color: darkgreen;
 }
-/** end of local-nurseries page **?
+/** end of local-nurseries page **/
 
-
-
-
-
-/** MEDIA QUERIES FOR RESPONSIVE DESIGN **/
-@media screen and (min-width: 320px) {
-  html, body, main{
-    flex-wrap: nowrap;
-  }
-  header{
-    flex-basis: 40%;
-  }
-  main{
-    flex-basis: 60%;
+@media screen and (min-width: 768px){
+.container {
+    width: 100%;
   }
 }
+
+@media screen and (min-width: 320px) {
+  .container {
+      width: 100%;
+    }
+}
+
 
 /*# sourceMappingURL=styles.css.map */
