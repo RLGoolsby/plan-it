@@ -33,7 +33,7 @@ header {
   margin-right: auto; }
 
 /** HOME PAGE ROUTING BUTTONS FOR 3 HTML VIEWS**/
-/** ul class for routing buttons on index.html **/
+/** angular routing buttons on index.html **/
 /** bootstrap nav-pills **/
 ul {
   margin-left: auto;
@@ -41,47 +41,16 @@ ul {
   margin-bottom: 0;
   list-style: none; }
 
-/**  3 angular routing buttons on index.html **/
-.plants {
-  /** 1 **/
-  background-color: darkgreen;
-  /* Green */
-  border-radius: 5px;
-  cursor: pointer;
-  width: 4em;
-  height: 2em;
-  border: none;
-  color: white;
-  text-decoration: none;
-  font-size: 20px; }
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 10px; }
 
-.specifics {
-  /** 2 **/
-  background-color: darkgreen;
-  /* Green */
-  border-radius: 5px;
-  cursor: pointer;
-  width: 6em;
-  height: 2em;
-  border: none;
-  color: white;
-  text-decoration: none;
-  font-size: 20px; }
+/** hrefs **/
+a {
+  background-color: transparent; }
 
-.local-nurseries {
-  /** 3 **/
-  background-color: darkgreen;
-  /* Green */
-  border-radius: 5px;
-  cursor: pointer;
-  width: 9em;
-  height: 2em;
-  border: none;
-  color: white;
-  text-decoration: none;
-  font-size: 20px; }
-
-/** end of routing buttons **/
+/** end of nav-pills **/
 /** CONDITIONS PAGE(VIEW) **/
 /** Conditions.html view **/
 #conditions {
@@ -105,7 +74,12 @@ select {
 input {
   /** may use later **/
   padding-top: 2em;
-  font-size: 1.5em; }
+  font-size: 2em; }
+
+.btn {
+  display: block;
+  margin: auto;
+  padding: 10px 10px; }
 
 #selectionWrapper {
   height: 100%; }
@@ -209,6 +183,9 @@ li {
   color: darkgreen; }
 
 /** end of local-nurseries page **/
+@media screen and (min-width: 966px) {
+  .container {
+    width: 100%; } }
 @media screen and (min-width: 768px) {
   .container {
     width: 100%; } }
