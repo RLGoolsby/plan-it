@@ -71,21 +71,20 @@ a{
 }
 
 form{
-  justify-content: center;
+  text-align: center;
 }
 
 label{
   color: black;
-  padding-right: 0.5em;
-  font-size: 2.5em;
+  padding: 10px;
+  font-size: 1.5em;
 }
 
 select{
-  margin-top: 1em;
   font-size: 1em;
 }
 
-input{/** may use later **/
+input{/** may add later **/
   padding-top: 2em;
   font-size: 2em;
 }
@@ -102,20 +101,14 @@ input{/** may use later **/
   height: 100%;
 }
 
-.fieldset{
-  // display: none;
-  display: inline-flex;
-  margin-left: 2em;
-  justify-content: space-around;
-  vertical-align: top;
-}
+
 
 /** ACCORDION SET UP **/
 #area-conditions{
 	padding-top: 4em;
   color: darkgreen;
 	border-bottom: 1px solid #343536;
-	font-size: 3.5em;
+	font-size: 3em;
 	font-weight: 300;
   font-style: normal;
   cursor: pointer;
@@ -128,7 +121,7 @@ input{/** may use later **/
   padding-top: 1em;
   color: darkgreen;
   border-bottom: 1px solid #343536;
-  font-size: 3.5em;
+  font-size: 3em;
   font-weight: 300;
   font-style: normal;
   cursor: pointer;

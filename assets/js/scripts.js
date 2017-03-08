@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
     $("#area-conditions").click(function(){
         $("#1").slideToggle("slow");
         $("#2").slideToggle("slow");
