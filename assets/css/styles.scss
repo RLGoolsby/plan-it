@@ -72,6 +72,7 @@ a{
 
 form{
   text-align: center;
+
 }
 
 label{
@@ -82,11 +83,6 @@ label{
 
 select{
   font-size: 1em;
-}
-
-input{/** may add later **/
-  padding-top: 2em;
-  font-size: 2em;
 }
 
 .btn{
@@ -211,7 +207,7 @@ background-color: #C9B677;
   outline: 1px solid black;
   margin-top: auto;
   margin: auto;
-  // background-color: lightcyan;
+  background-color: lightcyan;
 }
 
 .local{

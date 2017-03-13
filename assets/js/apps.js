@@ -11,7 +11,7 @@ app.config(function($routeProvider){
       templateUrl: "views/conditions.html"
     })
     .when("/local-nurseries",{
-      templateUrl: "views/local-nurseries.html"
+      templateUrl: "views/local-nurseries.php"
 
     })
     .otherwise({

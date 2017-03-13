@@ -70,11 +70,6 @@ label {
 select {
   font-size: 1em; }
 
-input {
-  /** may add later **/
-  padding-top: 2em;
-  font-size: 2em; }
-
 .btn {
   display: block;
   margin: auto;
@@ -167,7 +162,8 @@ li {
 .additional-info {
   outline: 1px solid black;
   margin-top: auto;
-  margin: auto; }
+  margin: auto;
+  background-color: lightcyan; }
 
 .local {
   background-color: lightcyan;
