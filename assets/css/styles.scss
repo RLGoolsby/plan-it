@@ -57,6 +57,7 @@ ul {
 /** hrefs **/
 a{
   background-color: transparent;
+  font-size: 22px;
 }
 /** end of nav-pills **/
 
@@ -164,7 +165,7 @@ font-size: 3em;
 li{
   padding-right: 10px;
   padding-top: 1em;
-  font-size: 1.5em;
+
 }
 /** end of plants page **/
 
@@ -215,6 +216,10 @@ background-color: #C9B677;
   padding: 2em;
   font-size: 4em;
   color: darkgreen;
+}
+
+h3{
+  margin:auto;
 }
 /** end of local-nurseries page **/
 @media screen and (min-width: 966px){

@@ -48,7 +48,8 @@ ul {
 
 /** hrefs **/
 a {
-  background-color: transparent; }
+  background-color: transparent;
+  font-size: 22px; }
 
 /** end of nav-pills **/
 /** CONDITIONS PAGE(VIEW) **/
@@ -130,8 +131,7 @@ select {
 
 li {
   padding-right: 10px;
-  padding-top: 1em;
-  font-size: 1.5em; }
+  padding-top: 1em; }
 
 /** end of plants page **/
 /** LOCAL NURSERIES PAGE(VIEW) **/
@@ -170,6 +170,9 @@ li {
   padding: 2em;
   font-size: 4em;
   color: darkgreen; }
+
+h3 {
+  margin: auto; }
 
 /** end of local-nurseries page **/
 @media screen and (min-width: 966px) {
