@@ -1,8 +1,8 @@
 
-var app = angular.module('plantInfo', [ ]);
+var app = angular.module('plants', [ ]);
 
 // controller for the plant names on plants.html//
-app.controller('planPlantsController', function($scope){
+app.controller('plantsController', function($scope){
   // $scope.botanicalName =
   this.name=plants;
   console.log ('plants working');
