@@ -36,7 +36,6 @@ header {
 /** angular routing buttons on index.html **/
 /** bootstrap nav-pills **/
 ul {
-  margin-left: auto;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none; }
@@ -50,6 +49,31 @@ ul {
 a {
   background-color: transparent;
   font-size: 22px; }
+
+/** logo in header of the earth **/
+.logo {
+  float: right;
+  border-radius: 50%; }
+
+h2 {
+  text-align: center; }
+
+h3 {
+  text-align: center; }
+
+p {
+  margin-top: 10px;
+  font-size: 30px;
+  color: darkgreen; }
+
+.how {
+  font-family: "Lato", Verdana, sans-serif;
+  font-size: 18px;
+  color: black;
+  margin-bottom: 15px; }
+
+.glyphicon.glyphicon-leaf {
+  margin-right: 15px; }
 
 /** end of nav-pills **/
 /** CONDITIONS PAGE(VIEW) **/
@@ -173,6 +197,10 @@ li {
 
 h3 {
   margin: auto; }
+
+/** footer **/
+.text-center {
+  margin-top: 30px; }
 
 /** end of local-nurseries page **/
 @media screen and (min-width: 966px) {
