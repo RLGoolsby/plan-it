@@ -38,38 +38,49 @@
   <div class="container">
 
 
-  <img class="logo" src="assets/images/logo-plan-it.png" alt="earth"/>
 
     <ul class="nav nav-pills">
+      <li><img class="logo" src="assets/images/logo-plan-it.png" alt="earth"/></li>
       <li role="presentation" class="active"><a role="button" href="#">Home</a></li>
-      <li role="presentation"><a role="button" data-toggle="collapse" href="#collapse"
-          aria-expanded="false" aria-controls="collapse">How it works</a></li>
       <li role="presentation"><a role="button" href="#/conditions">Location</a></li>
       <li role="presentation"><a role="button" href="#/local-nurseries">Local Nurseries</a></li>
     </ul>
 
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">
+      How it works
+    </button>
 
-
-<div class="collapse" id="collapse">
-  <div class="well">
-    <h2>Location, Location, Location...what to plant where?
-        </h2>
-        <p>How it works:</br>
-            </p>
-        <ul class="how">
-            <li class="howTo"><span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>Click on the "Location" tab in the header.</br>
-            (Make "nature of the location" choices that apply to you and press the <strong> "submit"</strong> button.  3 plant options will appear
-                for your considerations).</li>
-            <li class="howT"><span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>Go to the "Local Nurseries" tab and find a local nursery near you to
-                to purchase these plants.</li>
-        </ul>
-    <h3>That's it.  Have fun and happy planting.</h3>
-  </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">How it Works</h4>
+          </div>
+          <div class="modal-body">
+            <h2>Location, Location, Location...what to plant where?
+                </h2>
+                <ul class="how">
+                    <li class="howTo"><span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>Click on the "Location" tab in the header.</br>
+                    (Make "nature of the location" choices that apply to you and press the <strong> "submit"</strong> button.  3 plant options will appear
+                        for your considerations).</li>
+                    <li class="howT"><span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>Go to the "Local Nurseries" tab and find a local nursery near you to
+                        to purchase these plants.</li>
+                </ul>
+            <h3>That's it.  Have fun and happy planting.</h3>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
 </div>
 
 
 
-</div>
 
 
 </nav>
@@ -83,7 +94,6 @@
 
 <div class="container">
         <div class="text-center center-block">
-              <a href="https://github.com/rlgoolsby+Bootsnipp-page"><i class="fa fa-github fa-3x social"></i></a>
 	            <a href="https://www.linkedin.com/in/rhonda-goolsby-64302a1b/bootsnipp"><i class="fa fa-linkedin fa-3x social"></i></a>
 	            <a href="mailto:rlgoolsby@gmail.com"><i class="fa fa-envelope-square fa-3x social"></i></a>
         </div>

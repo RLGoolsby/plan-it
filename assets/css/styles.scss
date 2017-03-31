@@ -50,7 +50,7 @@ ul {
 .nav>li>a {
     position: relative;
     display: block;
-    padding: 10px 10px;
+    padding: 5px 5px;
 }
 .nav-pills{
   margin-right: auto;
@@ -62,7 +62,8 @@ a{
 }
 /** logo in header of the earth **/
 .logo{
-float:right;
+  margin-right: 20px;
+// float:right;
 border-radius: 50%;
 }
 
