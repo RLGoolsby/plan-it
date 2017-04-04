@@ -2,38 +2,46 @@
 <div id= "conditions">
 
 
-  <h1 id = "area-conditions">Nature of Location<i class="fa fa-level-down" aria-hidden="true"></i></h1>
+  <h1 id = "area-conditions">Nature of Planting Location<i class="fa fa-level-down" aria-hidden="true"></i></h1>
         <img scr="#">
 
 
     <div ng-app="plants" ng-controller="conditionsController">
 
       <form name="myForm">
+        <div class="row">
+          <div class="col-sm-4">
           <label for="lightExposure">Light Exposure:</label>
-          <select name="lightExposure" id="lightExposure" ng-model="lightExposure">
-            <option ng-repeat="option in data.lightOptions" value="{{option.id}}">{{option.name}}</option>
-         </select>
+            <select name="lightExposure" id="lightExposure" ng-model="lightExposure">
+              <option ng-repeat="option in data.lightOptions" value="{{option.id}}">{{option.name}}</option>
+            </select>
+          </div>
 
-
-            <label for="maxHeight">Max Height</label>
+          <div class="col-sm-4">
+            <label for="maxHeight">Maximum Available Height</label>
             <select class="maxHeight" id="maxHeight" ng-model="maxHeight">
               <option ng-repeat="option in data.heightOptions" value="{{option.id}}">{{option.name}}</option>
             </select>
+          </div>
 
-
-            <label for="maxWidth">Max Width</label>
+          <div class="col-sm-4">
+            <label for="maxWidth">Maximum Available Width</label>
             <select class="maxWidth" id="maxWidth" ng-model="maxWidth">
               <option ng-repeat="option in data.widthOptions" value="{{option.id}}">{{option.name}}</option>
             </select>
+          </div>
+        </div>
 
-
-        <h1 id = "climate-zone">Climate Zone<i class="fa fa-level-down" aria-hidden="true"></i></h1>
-                What is your location?
-
-              <label for="plantingZone">Planting Zone</label>
+        <h1 id = "climate-zone">Planting Zones<i class="fa fa-level-down" aria-hidden="true"></i></h1>
+                <h4>What area of the State do you live in?</h4>
+          <div class="row">
+            <div class="col-sm-4">
+              <label for="plantingZone">Geographic Location</label>
               <select class="plantingZone" id="plantingZone" ng-model="plantingZone">
-                <option ng-repeat="option in data.zoneOptions" value="{{option.id}}">{{option.zone}}/{{option.name}}</option>
+                <option ng-repeat="option in data.zoneOptions" value="{{option.id}}">{{option.name}}</option>
               </select>
+            </div>
+          </div>
 
 
             <input class="btn btn-primary" type="submit" value="Submit">

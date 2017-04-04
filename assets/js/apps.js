@@ -40,25 +40,23 @@ app.controller('conditionsController', ['$scope', function($scope) {
      {id: 1, name: "12 feet"},
      {id: 1, name: "15 feet"},
      {id: 1, name: "20 feet"},
-     {id: 1, name: "25 feet"},
-     {id: 1, name: "Unlimited Height"}
+     {id: 1, name: "25 feet"}
    ],
 
   widthOptions:[
     {id: 1, name: "3 feet" },
     {id: 1, name: "6 feet" },
-    {id: 1, name: "9 feet"},
-    {id: 1, name: "12 feet"},
-    {id: 1, name: "15 feet"},
-    {id: 1, name: "20 feet"},
-    {id: 1, name: "25 feet"},
-    {id: 1, name: "Unlimited Height"}
+    {id: 1, name: "9 feet" },
+    {id: 1, name: "12 feet" },
+    {id: 1, name: "15 feet" },
+    {id: 1, name: "20 feet" },
+    {id: 1, name: "25 feet" }
   ],
 
   zoneOptions: [
-    {id: 1, zone: "6b", name: "mountains" },
-    {id: 2, zone: "7a-7b", name: "piedmont" },
-    {id: 3, zone: "7b-8a", name: "coastal"}
+    {id: 1,  name: "mountains" },
+    {id: 2,  name: "piedmont" },
+    {id: 3,  name: "coastal" }
   ]
   };
 }]);
