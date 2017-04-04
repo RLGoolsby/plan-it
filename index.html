@@ -30,21 +30,39 @@
 
   <body>
 
-<div class ="container">
+<div class ="container-fluid">
     <!-- Views portal -->
     <ng-view></ng-view>
 
 <nav class="navbar navbar-inverse">
-  <div class="container">
+  <div class="container-fluid">
 
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
 
+      <a class="navbar-brand" href="#">Plan<span class="fa fa-globe"></span>it</a>
+    </div>
 
-    <ul class="nav nav-pills">
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#">Home</a></li>
+        <!-- <li role="presentation"><a role="button" href="#/conditions">Location</a></li>
+        <li role="presentation"><a role="button" href="#/local-nurseries">Local Nurseries</a></li> -->
+        <li><a href="#/conditions">Location</a></li>
+        <li><a href="#/local-nurseries">Local Nurseries</a></li>
+      </ul>
+
+    </div>
+    <!-- <ul class="nav nav-pills">
       <li><img class="logo" src="assets/images/logo-plan-it.png" alt="earth"/></li>
       <li role="presentation" class="active"><a role="button" href="#">Home</a></li>
       <li role="presentation"><a role="button" href="#/conditions">Location</a></li>
       <li role="presentation"><a role="button" href="#/local-nurseries">Local Nurseries</a></li>
-    </ul>
+    </ul> -->
 
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">
@@ -73,7 +91,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
           </div>
         </div>
       </div>
@@ -94,8 +112,8 @@
 
 <div class="container">
         <div class="text-center center-block">
-	            <a href="https://www.linkedin.com/in/rhonda-goolsby-64302a1b/bootsnipp"><i class="fa fa-linkedin fa-3x social"></i></a>
-	            <a href="mailto:rlgoolsby@gmail.com"><i class="fa fa-envelope-square fa-3x social"></i></a>
+	            <a href="https://www.linkedin.com/in/rhonda-goolsby-64302a1b/bootsnipp"><i class="fa fa-linkedin  fa-2x social"></i></a>
+	            <a href="mailto:rlgoolsby@gmail.com"><i class="fa fa-envelope-square fa-2x social"></i></a>
         </div>
 </div>
 

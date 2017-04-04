@@ -23,13 +23,14 @@ background-image: url("https://static.vecteezy.com/system/resources/previews/000
   margin-top: 0.2em;
 }
 .fa.fa-globe{/** globe icon in header **/
-  padding-left: 12px;
-  padding-right: 21px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 /** end of header **/
 
 /**  bootstrap container div **/
-.container{
+.container-fluid{
+
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
@@ -38,9 +39,11 @@ background-image: url("https://static.vecteezy.com/system/resources/previews/000
 }
 
 
+
+
 /** HOME PAGE ROUTING BUTTONS FOR 3 HTML VIEWS**/
 /** angular routing buttons on index.html **/
-/** bootstrap nav-pills **/
+
 ul {
     padding-left: 0;
     margin-bottom: 0;
@@ -52,20 +55,24 @@ ul {
     display: block;
     padding: 5px 5px;
 }
-.nav-pills{
-  margin-right: auto;
-}
+// .nav-pills{
+//   margin-right: auto;
+// }
 /** hrefs **/
 a{
   background-color: transparent;
   font-size: 22px;
 }
-/** logo in header of the earth **/
-.logo{
-  margin-right: 20px;
-// float:right;
-border-radius: 50%;
+
+.navbar-brand{
+  font-size: 20px;
 }
+/** logo in header of the earth **/
+// .logo{
+//   margin-right: 20px;
+// // float:right;
+// border-radius: 50%;
+// }
 
 h2{
   text-align: center;
@@ -81,6 +88,9 @@ p{
   color: darkgreen;
 }
 
+.modal-dialog{
+  box-shadow: 10px 10px 38px 21px rgba(0,31,59,1);
+}
 
 .how{
   font-family: "Lato", Verdana, sans-serif;
