@@ -9,7 +9,8 @@ header {
   justify-content: center;
   width: 100%;
   border: 2px solid black;
-  background-image: url("https://static.vecteezy.com/system/resources/previews/000/081/782/non_2x/free-plant-vectors.jpg"); }
+  background-image: url("https://static.vecteezy.com/system/resources/previews/000/081/782/non_2x/free-plant-vectors.jpg");
+  margin-bottom: 10px; }
 
 .title {
   /** Plan it **/
@@ -52,6 +53,9 @@ a {
 .navbar-brand {
   font-size: 20px; }
 
+.btn.btn-success {
+  text-align: center; }
+
 /** logo in header of the earth **/
 h2 {
   text-align: center; }
@@ -60,7 +64,9 @@ h3 {
   text-align: center; }
 
 h4 {
-  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  color: #337ab7;
   font-size: 20px;
   font-family: "Lato", Verdana, sans-serif; }
 
@@ -87,7 +93,7 @@ p {
 #conditions {
   position: absolute;
   width: 102%;
-  height: 144%;
+  height: 150%;
   background-color: #C9B677; }
 
 form {
@@ -120,7 +126,6 @@ select {
   cursor: pointer; }
 
 #climate-zone {
-  display: flex;
   padding-top: 1em;
   color: darkgreen;
   border-bottom: 1px solid #343536;
@@ -135,7 +140,7 @@ select {
 #plants {
   position: absolute;
   width: 102%;
-  height: 144%;
+  height: 150%;
   background-color: #C9B677; }
 
 .fieldset-group {
@@ -169,11 +174,10 @@ li {
 #local-nurseries {
   position: absolute;
   width: 102%;
-  height: 144%;
+  height: 150%;
   background-color: #C9B677; }
 
 .nurseries {
-  display: flex;
   margin-top: 10em;
   border: none;
   color: black;
@@ -192,31 +196,41 @@ li {
 .additional-info {
   outline: 1px solid black;
   margin-top: auto;
+  text-align: center;
   margin: auto;
   background-color: lightcyan; }
 
 .local {
+  text-align: center;
   background-color: lightcyan;
-  padding: 2em;
+  padding: 20px;
   font-size: 4em;
   color: darkgreen; }
 
-h3 {
-  margin: auto; }
+.bld {
+  font-size: 20px;
+  display: block;
+  padding: 10px; }
+
+.buy {
+  font-size: 20px;
+  display: block;
+  padding: 10px; }
 
 /** footer **/
 .text-center {
-  margin-top: 30px; }
+  background-color: black;
+  border: 2px solid black; }
 
 /** end of local-nurseries page **/
 @media screen and (min-width: 966px) {
-  .container {
+  .container-fluid {
     width: 100%; } }
 @media screen and (min-width: 768px) {
-  .container {
+  .container-fluid {
     width: 100%; } }
 @media screen and (min-width: 320px) {
-  .container {
+  .container-fluid {
     width: 100%; } }
 /*# sourceMappingURL=styles.css.map */
 

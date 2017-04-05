@@ -13,7 +13,7 @@ justify-content: center;
 width: 100%;
 border: 2px solid black;
 background-image: url("https://static.vecteezy.com/system/resources/previews/000/081/782/non_2x/free-plant-vectors.jpg");
-
+margin-bottom: 10px;
 }
 
 .title{/** Plan it **/
@@ -30,7 +30,6 @@ background-image: url("https://static.vecteezy.com/system/resources/previews/000
 
 /**  bootstrap container div **/
 .container-fluid{
-
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
@@ -67,6 +66,10 @@ a{
 .navbar-brand{
   font-size: 20px;
 }
+
+.btn.btn-success{
+  text-align: center;
+}
 /** logo in header of the earth **/
 // .logo{
 //   margin-right: 20px;
@@ -83,7 +86,9 @@ h3{
 }
 
 h4{
-  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  color: #337ab7;
   font-size: 20px;
   font-family: "Lato", Verdana, sans-serif;
 }
@@ -115,7 +120,7 @@ p{
 #conditions{
   position: absolute;
   width: 102%;
-  height: 144%;
+  height: 150%;
   background-color: #C9B677;
 }
 
@@ -161,7 +166,7 @@ select{
 }
 
 #climate-zone{
-  display: flex;
+  // display: flex;
   // margin: 0 0 0.3em 0.5em;
   padding-top: 1em;
   color: darkgreen;
@@ -182,7 +187,7 @@ select{
 #plants{
   position: absolute;
   width: 102%;
-  height: 144%;
+  height: 150%;
   background-color: #C9B677;
 }
 
@@ -226,13 +231,13 @@ li{
 #local-nurseries{
 position: absolute;
 width: 102%;
-height: 144%;
+height: 150%;
 background-color: #C9B677;
 }
 
 
 .nurseries{
-  display: flex;
+  // display: flex;
   margin-top: 10em;
   border: none;
   color: black;
@@ -255,40 +260,52 @@ background-color: #C9B677;
 .additional-info{
   outline: 1px solid black;
   margin-top: auto;
+  text-align: center;
   margin: auto;
   background-color: lightcyan;
 }
 
 .local{
+  text-align: center;
   background-color: lightcyan;
-  padding: 2em;
+  padding: 20px;
   font-size: 4em;
   color: darkgreen;
 }
 
-h3{
-  margin:auto;
+.bld{
+  font-size: 20px;
+  display: block;
+  padding: 10px;
+}
+
+.buy{
+  font-size: 20px;
+  display: block;
+  padding: 10px;
 }
 
 /** footer **/
 .text-center{
-  margin-top: 30px;
+  background-color: black;
+  border: 2px solid black;
+
 }
 /** end of local-nurseries page **/
 @media screen and (min-width: 966px){
-.container {
+.container-fluid {
     width: 100%;
   }
 }
 
 @media screen and (min-width: 768px){
-.container {
+.container-fluid {
     width: 100%;
   }
 }
 
 @media screen and (min-width: 320px) {
-  .container {
+  .container-fluid {
       width: 100%;
     }
 }

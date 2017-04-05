@@ -33,9 +33,10 @@
         </div>
 
         <h1 id = "climate-zone">Planting Zones<i class="fa fa-level-down" aria-hidden="true"></i></h1>
-                <h4>What area of the State do you live in?</h4>
+                <h4>What area of North Carolina do you live in?</h4>
+
           <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-12">
               <label for="plantingZone">Geographic Location</label>
               <select class="plantingZone" id="plantingZone" ng-model="plantingZone">
                 <option ng-repeat="option in data.zoneOptions" value="{{option.id}}">{{option.name}}</option>
