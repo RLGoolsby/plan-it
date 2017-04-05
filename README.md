@@ -1,5 +1,5 @@
 # Plan-it
-## "THIS SITE IS UNDER-CONSTRUCTION"
+## "THIS SITE IS UNDER-CONSTRUCTION"; aren't they all?
 
 ## This is a web application (that will eventually be a mobile app) that will help people determine which type of plant will thrive in a particular location and where it can be locally purchased.
 
@@ -16,4 +16,4 @@
 
     * There will be a local nursery locater using information being drawn form 2 types of APIs.
 
-### This app is being built using: HTML, CSS, SASS, JQuery, and Angular.js.
+### This app is being built using: HTML, CSS, SASS, JavaScript, bootstrap and Angular.js.
