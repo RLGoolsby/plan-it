@@ -6,7 +6,7 @@
         <img scr="#">
 
 
-    <div ng-app="plants" ng-controller="conditionsController">
+    <div class="mainConditons" ng-controller="conditionsController">
 
       <form name="myForm">
         <div class="row">
@@ -45,11 +45,13 @@
           </div>
 
 
-            <input class="btn btn-primary" type="submit" value="Submit">
+            <button ng-click="submit" class="btn btn-primary" type="submit">Submit</button>
 
 
       </form>
     </div>
 
    </div>
+
+   <!-- Controller -->
    <script src="conditonsController.js"></script>

@@ -1,0 +1,7 @@
+
+{
+ "trees":
+ [
+    {"name":"treeName","description":"treeDescription", "img": "img"}
+ ]
+}

@@ -1,15 +1,18 @@
 var app = angular.module("plants", ["ngRoute"]);
  console.log("working");
+
 app.config(function($routeProvider){
   console.log("and now");
   $routeProvider
+
     .when("/plants",{
       templateUrl: "views/plants.html"
-
     })
+
     .when("/conditions",{
       templateUrl: "views/conditions.html"
     })
+
     .when("/local-nurseries",{
       templateUrl: "views/local-nurseries.html"
 
@@ -60,3 +63,12 @@ app.controller('conditionsController', ['$scope', function($scope) {
   ]
   };
 }]);
+
+
+
+var app = angular.module('plants', []);
+app.controller('conditionsController', function($scope, $http) {
+  $http.get("plant.json").then(function (response) {
+      $scope.myData = response.data.items;
+  });
+});
