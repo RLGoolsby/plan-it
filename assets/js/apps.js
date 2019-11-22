@@ -3,22 +3,21 @@ var app = angular.module("plants", ["ngRoute"]);
 
 app.config(function($routeProvider){
   console.log("and now");
-  $routeProvider
-
-    .when("/plants",{
-      templateUrl: "views/plants.html"
-    })
-
+  $routeProvider.
     .when("/conditions",{
       templateUrl: "views/conditions.html"
-    })
+    }).
 
     .when("/local-nurseries",{
       templateUrl: "views/local-nurseries.html"
 
-    })
+    }).
+  
+    .when("/plants",{
+      templateUrl: "views/plants.html"
+    }).
     .otherwise({
-      redirectTo: "/home"
+      redirectTo: "home"
 
     });
 
