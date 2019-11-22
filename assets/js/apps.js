@@ -5,19 +5,20 @@ app.config(function($routeProvider){
   console.log("and now");
   $routeProvider.
     .when("/conditions",{
-      templateUrl: "views/conditions.html"
+      templateUrl: "views/conditions.html",
+      controller: "conditionsController"
     }).
 
     .when("/local-nurseries",{
       templateUrl: "views/local-nurseries.html"
-
     }).
   
     .when("/plants",{
-      templateUrl: "views/plants.html"
+      templateUrl: "views/plants.html".
+     controller: "plantsController"
     }).
     .otherwise({
-      redirectTo: "home"
+      redirectTo: "/home"
 
     });
 
