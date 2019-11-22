@@ -1,28 +1,26 @@
 var app = angular.module("plants", ["ngRoute"]);
  console.log("working");
 
-app.config(function($routeProvider){
+app.config(['$routeProvider',function($routeProvider){
   console.log("and now");
   $routeProvider.
+    .when("/",{
+      templateUrl: "home.html"
+    }).
     .when("/conditions",{
       templateUrl: "views/conditions.html",
       controller: "conditionsController"
     }).
-
+  
     .when("/local-nurseries",{
       templateUrl: "views/local-nurseries.html"
     }).
-  
-    .when("/plants",{
-      templateUrl: "views/plants.html",
-     controller: "plantsController"
-    }).
     .otherwise({
-      redirectTo: "/home"
+      redirectTo: "/"
 
     });
 
-});
+}]);
 console.log("and again");
 
 
