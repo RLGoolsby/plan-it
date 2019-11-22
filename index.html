@@ -1,7 +1,7 @@
 
 
 <!DOCTYPE html>
-<html ng-app="plants">
+<html>
 
   <head>
     <meta charset="utf-8">
@@ -24,22 +24,15 @@
 
     <title>Plan-it</title>
     <link rel="stylesheet" href="assets/css/styles.css">
-	  
-  <script src="http://code.angularjs.org/1.2.14/angular.js"></script>
-  <script src="http://code.angularjs.org/1.2.14/angular-route.js"></script>
-
-  <script type="text/javascript">
-    angular.element(document.getElementsByTagName('head')).append(angular.element('<base href="' + window.location.pathname + '" />'));
-  </script>
 
   </head>
 
 <body>
-<!-- <body ng-app = "plants"> -->
+<body ng-app = "plants">
 
-<!-- <div class ="container-fluid"> -->
+<div class ="container-fluid">
     <!-- Views portal -->
-<!--     <ng-view></ng-view> -->
+    <ng-view></ng-view>
 
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -108,7 +101,7 @@
 
 
 
-<!-- </div>--><!-- end of container-fluid --> -->
+</div><!-- end of container-fluid --> 
 
 <div class="container-fluid">
         <div class="text-center center-block">
@@ -117,10 +110,6 @@
         </div>
 </div>
 
- <div class ="container-fluid"> 
-    <!-- Views portal -->
-    <ng-view></ng-view>
-</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-route.js"></script>
@@ -137,7 +126,7 @@
 <script src="assets/js/apps.js"></script>
 
 <!-- Controller -->
-<!-- <script src="conditonsController.js"></script> -->
+<script src="conditonsController.js"></script>
 
 
   </body>
