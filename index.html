@@ -31,8 +31,7 @@
 <body ng-app ="plants">
 
 
-    <!-- Views portal -->
-	<div><ng-view></ng-view></div>
+    
 
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -109,7 +108,10 @@
 	            <a href="mailto:rlgoolsby@gmail.com"><i class="fa fa-envelope-square fa-2x social"></i></a>
         </div>
 </div>
-
+<!-- Views portal -->
+	<div class="container-fluid">
+		<div><ng-view></ng-view></div>
+	</div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-route.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-resource.js"></script>
