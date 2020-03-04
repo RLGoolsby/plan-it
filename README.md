@@ -1,5 +1,5 @@
 # Plan-it
-## "THIS SITE IS UNDER-CONSTRUCTION"; aren't they all?
+## "THIS SITE IS UNDER-CONSTRUCTION"; aren't they all? Something broke and I'm working on routing from home page to other nav bar tabs.
 
 ## This is a web application (that will eventually be a mobile app) that will help people determine which type of plant will thrive in a particular location and where it can be locally purchased.
 
