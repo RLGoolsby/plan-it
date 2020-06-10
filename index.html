@@ -110,7 +110,9 @@
 </div>
 <!-- Views portal -->
 	<div class="container-fluid">
-		<div><ng-view></ng-view></div>
+		<div class="row" ng-controller="">
+			<ng-view></ng-view>
+		</div>
 	</div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-route.js"></script>
