@@ -28,10 +28,11 @@
   </head>
 
 
-<body ng-app ="plants">
+<body ng-app = "plants">
 
-
-    
+<div class ="container-fluid">
+    <!-- Views portal -->
+    <ng-view></ng-view>
 
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -99,8 +100,7 @@
       </header>
 
 
-
-
+</div><!-- end of container-fluid -->
 
 <div class="container-fluid">
         <div class="text-center center-block">
@@ -108,12 +108,9 @@
 	            <a href="mailto:rlgoolsby@gmail.com"><i class="fa fa-envelope-square fa-2x social"></i></a>
         </div>
 </div>
-<!-- Views portal -->
-	<div class="container-fluid">
-		<div class="row" ng-controller="mainCtrl">
-			<ng-view></ng-view>
-		</div>
-	</div>
+
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-route.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-resource.js"></script>
@@ -129,9 +126,7 @@
 <script src="assets/js/apps.js"></script>
 
 <!-- Controller -->
-<script src="assets/js/controller/conditonsController.js"></script>
-<!-- <script src="assets/js/controller/plantsController.js"></script> -->
-<script src="assets/js/controller/nurseryController.js"></script>
+<!-- <script src="conditonsController.js"></script> -->
 
 
   </body>
