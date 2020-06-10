@@ -5,14 +5,14 @@ app.config(['$routeProvider',function($routeProvider){
   console.log("and now");
   $routeProvider.
     .when("/",{
-      templateUrl: "home.html",
-      controller: "mainCtrl"
+      templateUrl: "/home.html",
+      // controller: "mainCtrl"
     }).
     .when("/conditions",{
       templateUrl: "views/conditions.html",
       controller: "conditionsController"
     }).
-  
+
     .when("/local-nurseries",{
       templateUrl: "views/local-nurseries.html"
     }).
