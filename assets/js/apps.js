@@ -62,9 +62,9 @@ app.controller('conditionsController', function ($scope) ){
 
 
 
-// var app = angular.module('plants', []);
-// app.controller('conditionsController', function($scope, $http) {
-//   $http.get("plant.json").then(function (response) {
-//       $scope.myData = response.data.items;
-//   });
-// });
+var app = angular.module('plants', []);
+app.controller('conditionsController', function($scope, $http) {
+  $http.get("plant.json").then(function (response) {
+      $scope.myData = response.data.items;
+  });
+});
