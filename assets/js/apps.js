@@ -1,4 +1,4 @@
-var app = angular.module("plants", ["ngRoute"]);
+var app = angular.module("plants", ["ngRoute", , 'angularCSS']);
  console.log("working");
 
 app.config(function($routeProvider){
@@ -9,10 +9,12 @@ app.config(function($routeProvider){
     })
     .when("/conditions",{
       templateUrl: "views/conditions.html",
+      css: 'views/styles.css',
       controller: "conditionsController"
     })
     .when("/local-nurseries",{
-      templateUrl: "views/local-nurseries.html"
+      templateUrl: "views/local-nurseries.html",
+      css: 'views/styles.css'
     })
     .otherwise({
       redirectTo: "/"
