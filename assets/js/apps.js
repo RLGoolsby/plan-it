@@ -9,12 +9,12 @@ app.config(function($routeProvider){
     })
     .when("/conditions",{
       templateUrl: "views/conditions.html",
-      css: 'assets/css/styles.css',
+      css: '/styles.css',
       controller: "conditionsController"
     })
     .when("/local-nurseries",{
       templateUrl: "views/local-nurseries.html",
-      css: 'assets/css/styles.css'
+      css: '/styles.css'
     })
     .otherwise({
       redirectTo: "/"
