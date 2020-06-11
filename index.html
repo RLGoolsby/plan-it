@@ -30,9 +30,9 @@
 
 <body ng-app = "plants">
 
-<div class ="container-fluid" ng-controller="mainCtrl">
+<!-- <div class ="container-fluid" ng-controller="mainCtrl"> -->
     <!-- Views portal -->
-    <ng-view></ng-view>
+
 
 
 <nav class="navbar navbar-inverse">
@@ -50,13 +50,13 @@
 
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#">Home</a></li>
+        <li class="active"><a href="#/">Home</a></li>
         <li><a href="#/conditions">Location</a></li>
         <li><a href="#/local-nurseries">Local Nurseries</a></li>
       </ul>
-
     </div>
-
+    
+<ng-view></ng-view>
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">
       How it works
@@ -101,7 +101,7 @@
       </header>
 
 
-</div><!-- end of container-fluid -->
+<!-- </div><!-- end of container-fluid -->
 
 <!-- <div class="container-fluid"> -->
         <div class="text-center center-block">

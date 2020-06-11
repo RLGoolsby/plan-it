@@ -1,31 +1,29 @@
 var app = angular.module("plants", ["ngRoute"]);
  console.log("working");
 
-app.config(['$routeProvider',function($routeProvider){
+app.config(function($routeProvider){
   console.log("and now");
   $routeProvider.
     .when("/",{
-      templateUrl: "index.html",
-    }).
+      templateUrl: "home.html"
+    })
     .when("/conditions",{
       templateUrl: "views/conditions.html",
       controller: "conditionsController"
-    }).
-
+    })
     .when("/local-nurseries",{
       templateUrl: "views/local-nurseries.html"
-    }).
+    })
     .otherwise({
       redirectTo: "/"
-
     });
-
-}]);
+});
 console.log("and again");
 
 
 // First Controller //
-app.controller('conditionsController', ['$scope', function($scope) {
+app.controller('conditionsController', function ($scope) ){
+// app.controller('conditionsController', ['$scope', function($scope) {
   $scope.data = {
    lightOptions: [
      {id: 1, name: 'Full Sun'},
@@ -60,7 +58,7 @@ app.controller('conditionsController', ['$scope', function($scope) {
     {id: 3,  name: "coastal" }
   ]
   };
-}]);
+});
 
 
 
