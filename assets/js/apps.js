@@ -4,18 +4,18 @@ var app = angular.module("plants", ["ngRoute"]);
 app.config(function($routeProvider){
   console.log("and now");
   $routeProvider.
-    .when("#/",{
+    .when("/",{
       templateUrl: "home.html"
     })
-    .when("#/conditions",{
+    .when("/conditions",{
       templateUrl: "views/conditions.html",
       controller: "conditionsController"
     })
-    .when("#/local-nurseries",{
+    .when("/local-nurseries",{
       templateUrl: "views/local-nurseries.html"
     })
     .otherwise({
-      redirectTo: "#/"
+      redirectTo: "/"
     });
 });
 console.log("and again");
