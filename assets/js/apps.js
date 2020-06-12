@@ -7,13 +7,13 @@ app.config(function($routeProvider){
     .when("/",{
       templateUrl: "home.html"
     })
-    .when("/views/conditions",{
-      templateUrl: "/views/conditions.html",
+    .when("/conditions",{
+      templateUrl: "views/conditions.html",
       css: '/styles.css',
       controller: "conditionsController"
     })
-    .when("/views/local-nurseries",{
-      templateUrl: "/views/local-nurseries.html",
+    .when("/local-nurseries",{
+      templateUrl: "views/local-nurseries.html",
       css: '/styles.css'
     })
     .otherwise({
