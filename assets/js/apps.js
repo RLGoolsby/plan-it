@@ -1,4 +1,4 @@
-var app = angular.module("plants", ["ngRoute", , 'angularCSS']);
+var app = angular.module("plants", ["ngRoute",  'angularCSS']);
  console.log("working");
 
 app.config(function($routeProvider){

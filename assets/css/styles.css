@@ -1,6 +1,8 @@
 @import "bootstrap.min.css";
 @import "font-awesome.min.css";
-
+@-ms-viewport{
+  width: device-width;
+}
 
 html, body, main {
   top: 0;
